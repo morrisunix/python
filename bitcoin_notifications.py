@@ -69,7 +69,7 @@ def format_bitcoin_history(bitcoin_history):
 
     # Use a <br> (break) tag to create a new line
     # Join the rows delimited by <br> tag: rowq<br>row2<br>row3
-    return '<br'.join(rows)
+    return '<br>'.join(rows)
 
 def main():
     """ Main function
