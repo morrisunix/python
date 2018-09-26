@@ -18,6 +18,24 @@ def get_intersection(list_1, list_2):
     intersection_list = set(list_1) & set(list_2)
     return list(intersection_list)
 
+def random_list_generator(number_of_elements):
+    """ Returns a list of random numbers
+
+    Parameters
+    ----------
+    number_of_elements: int
+        Size of the list
+
+    Returns
+    -------
+    list
+        New list with size number_of_elements and random elements
+    """
+    new_list = []
+    for count in range(number_of_elements):
+        new_list.append(randint(0, 100))
+
+    return new_list
 
 def main():
     """ Main function
@@ -33,9 +51,12 @@ def main():
     a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
     b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
-    intersection_list = get_intersection(a, b)
+    c = random_list_generator(10)
+    d = random_list_generator(20)
 
-    print("{} \n {}".format(a, b))
+    intersection_list = get_intersection(c, d)
+
+    print("{} \n{}".format(c, d))
 
     print(intersection_list)
 
