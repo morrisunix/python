@@ -12,7 +12,8 @@ def is_palindrome(provided_word):
     bool
         Returns True or false if is or is not a palindrome
     """
-    reverse_palindrome = ''.join(list(provided_word)[::-1])
+    #reverse_palindrome = ''.join(list(provided_word)[::-1])
+    reverse_palindrome = provided_word[::-1]
     print(reverse_palindrome)
     if provided_word == reverse_palindrome:
         palindrome = True
